@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const puppeteer = require('puppeteer');
+
+(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto('https://finance.yahoo.com/quote/SASA.IS?.tsrc=fin-srch');
+
+  // Örnek olarak, tüm başlıkları (h1 etiketleri) alalım:
+  const headings = await page.evaluate(() => {
+    const headings = Array.from(document.querySelectorAll('livePrice svelte-mgkamr'));
+    return headings.map(heading => heading.textContent);
+  });
+
+  console.log(headings);
+
+  await browser.close();
+})();
+</script>
