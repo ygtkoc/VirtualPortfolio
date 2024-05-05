@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiğit Efe Koç | Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="tab-link active" data-tab="home" onclick="makeActive(this);">Anasayfa</a></li>
+            <li><a href="#" class="tab-link" data-tab="portfolio" onclick="makeActive(this);">Sanal Portföy</a></li>
+            <li><a href="#" class="tab-link" data-tab="news" onclick="makeActive(this);">Haberler</a></li>
+            <li><a href="#" class="tab-link" data-tab="companies" onclick="makeActive(this);">Şirketler</a></li>
+            <li><a href="#" class="tab-link" data-tab="PRO" onclick="makeActive(this);">PRO Üyelik</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="#">Giriş Yap</a>
+            <a href="#">Kayıt Ol</a>
+          </div>
+      </nav>
+
+      <div class="tabs-content">
+        <div id="home" class="tab active">Anasayfa</div>
+        <div id="portfolio" class="tab">Sanal Cüzdan Sayfası</div>
+        <div id="news" class="tab">Haberler Sayfası</div>
+        <div id="companies" class="tab">Şirketler Sayfası</div>
+        <div id="PRO" class="tab">PRO Üyelik Sayfası</div>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
