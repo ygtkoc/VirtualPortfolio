@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+/* İyi yazılımcılar vardır, bir de en iyileri. github.com/ygtkoc */
+/* Project 5% Completed... */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+  }
+  
+  nav {
+    background-color: #2ecc71; /* Canlı yeşil */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Siyah gölge efekti */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Liste elemanlarını sağa kaydır */
+  }
+  
+  nav ul li:first-child {
+    margin-left: 20px; /* İlk liste elemanı için boşluk */
+  }
+  
+  nav ul li a {
+    padding: 20px;
+    color: #FFF; /* Beyaz yazı */
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px; /* Ovalleştirilmiş kenarlar */
+    transition: background-color 0.3s ease; /* Hover animasyonu */
+  }
+  
+  nav ul li a:hover {
+    background-color: #27ae60; /* Açık yeşil */
+  }
+  
+  nav ul li a.active {
+    background-color: #27ae60; /* Açık yeşil */
+  }
+  
+  .auth-buttons {
+    margin-left: auto;
+  }
+  
+  .auth-buttons a {
+    color: #FFF; /* Beyaz yazı */
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid #FFF; /* Beyaz kenar */
+    border-radius: 20px; /* Ovalleştirilmiş kenarlar */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hover animasyonu */
+  }
+  
+  .auth-buttons a:hover {
+    background-color: #FFF; /* Beyaz arka plan */
+    color: #2ecc71; /* Canlı yeşil yazı */
+  }
+
+
+  .tab {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
